@@ -1,7 +1,11 @@
-from flask import Flask
-application = Flask(__name__)
+from flask import Flask, render_template, redirect, url_for
 
-@application.route('/')
-def hello_world():
-	return 'hello world'
+# Create flask app
+app = Flask(__name__)
 
+@app.route('/')
+def home():
+	return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
