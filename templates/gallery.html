@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"
+    ></script>
+
+     <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+        </script>
+        <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+        </script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <title>Bloom Berry</title>
+    <link rel="icon" type="image/x-icon" href={{ "data:image/png;base64," + img_list[0].get('content') }}>
+
+  </head>
+
+
+  <style type="text/css">
+
+    .item{
+      transition: .5s ease-in-out;
+    }
+
+    .item:hover{
+      filter: brightness(80%);
+    }
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="/">
+          <img src={{ "data:image/png;base64," + img_list[0].get('content') }} class="img-fluid" alt="..." width="45" height="55">
+          </a>
+          &nbsp&nbsp
+        <a class="navbar-brand" href="#">Bloom Berry</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="/">首頁<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="about">關於我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="post">最新專欄</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery">畫廊</a>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          &nbsp&nbsp
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+        </div>
+      </nav>
+
+
+      <div class="container-fluid">
+        <div class="row mt-4">
+
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[1].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[1].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[2].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[2].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[3].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[3].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[4].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[4].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[5].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[5].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[6].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[6].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[7].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[7].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[8].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[8].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href={{ "data:image/png;base64," + img_list[9].get('content') }} class="fancybox" data-fancybox="gallery1">
+              <img src={{ "data:image/png;base64," + img_list[9].get('content') }} width="100%" height="100%">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>歡迎加入我們</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Bloom Berry
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">種植指導</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">農藝用品</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">農產品推銷</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">有機農作物</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i>546001南投縣仁愛鄉大同村仁和路215號</p>
+              <p><i class="fas fa-home me-3"></i>No.215,Renhe Rd.,Ren-ai Township,Nantou County 54641,Taiwan(R.O.C.)</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                bloomberry1023@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> (049)1231234</p>
+              <p><i class="fas fa-print me-3"></i> (049)1231234</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">xxx.com</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+  </body>
+
+  </html>

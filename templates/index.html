@@ -2,15 +2,481 @@
 <html>
 
   <head>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"
+    ></script>
+
+     <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+        </script>
+        <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+        </script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <title>Bloom Berry</title>
+    <link rel="icon" type="image/x-icon" href={{ "data:image/png;base64," + img_list[0].get('content') }}>
+
   </head>
 
   <body>
-    
-    <h3>Hello World</h3>
+     <nav class="navbar navbar-expand-lg bg-light">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="/">
+          <img src={{ "data:image/png;base64," + img_list[0].get('content') }} class="img-fluid" alt="..." width="45" height="55">
+          </a>
+          &nbsp&nbsp
+        <a class="navbar-brand" href="#">Bloom Berry</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="/">首頁<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="about">關於我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="post">最新專欄</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery">畫廊</a>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          &nbsp&nbsp
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+        </div>
+      </nav>
+
+      <header>
+        <!-- Intro settings -->
+        <style>
+          /* Default height for small devices */
+          #intro-example {
+            height: 400px;
+          }
+
+          /* Height for devices larger than 992px */
+          @media (min-width: 992px) {
+            #intro-example {
+              height: 600px;
+            }
+          }
+        </style>
+
+        <!-- Background image -->
+        <div
+          id="intro-example"
+          class="p-5 text-center bg-image"
+          style="background-image: url({{ 'data:image/png;base64,' + img_list[2].get('content') }});"
+        >
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white">
+                <h1 class="mb-3">Bloom Berry</h1>
+                <h5 class="mb-4">引領登上農業市場的顛峰</h5>
+                <a
+                  class="btn btn-outline-light btn-lg m-2"
+                  href="post"
+                  role="button"
+                  rel="nofollow"
+                  target="_blank"
+                >了解更多</a
+                >
+                <a
+                  class="btn btn-outline-light btn-lg m-2"
+                  href="about"
+                  target="_blank"
+                  role="button"
+                >加入我們</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background image -->
+      </header>
+
+        &nbsp&nbsp
+        <div class = "container" style = "text-align: center">
+          <h2><span style="font-size:24px;"><strong><span style="color:#008000;">存在意義</span></strong></span></h2>
+
+          <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">農場設立於1937年日治時期，場址位於南投縣仁愛鄉山區。總面積約1081公頃 ，海拔分跨900至2700公尺。</span></span></p>
+
+          <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">場區內氣候變化差異極大，四季鮮明遞嬗，生態資源多元豐富，為一渾然天成的教學研究場域。</span></span></p>
+
+          <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">長期以來致力於高冷地園藝的教學研究及示範經營。</span></span></p>
+
+          <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">近年來著手進行場區自然資源的調查研究、造林復育及原生植物標本之蒐集保存。</span></span></p>
+
+          <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">並自1998年起舉辦自然生態體驗營，推廣環境教育。</span></span></p>
+
+          <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">2014年取得MOA（國際美育基金會）有機驗證，推廣友善環境耕作。</span></span></p>
+
+          <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">未來除提升教學研究品質，發展友善環境、優質安全農產品之示範經營外，</span></span></p>
+
+          <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">更期許成為臺灣環境教育推廣基地，以達山區資源永續發展與共享之目的。</span></span></p>
+        </div>
+
+        &nbsp&nbsp
+
+        <div class="container-lg">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[1].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[1].get('content') }} class="card-img-top" alt="Hollywood Sign on The Hill"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">
+                    榮獲台大2019年最佳植物獎
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[2].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[2].get('content') }} class="card-img-top" alt="Palm Springs Road"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">榮獲台大2019年最佳植物獎</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[3].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[3].get('content') }} class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">榮獲台大2020年最佳植物獎</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[4].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[4].get('content') }} class="card-img-top" alt="Skyscrapers"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">
+                    榮獲台大2020年最佳植物獎
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[5].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[5].get('content') }} class="card-img-top" alt="Skyscrapers"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">
+                    榮獲台大2020年最佳植物獎
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[6].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[6].get('content') }} class="card-img-top" alt="Skyscrapers"/>
+                  </a>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">
+                    榮獲台大2021年最佳植物獎
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[7].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[7].get('content') }} class="card-img-top" alt="Skyscrapers"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">
+                    榮獲台大2021年最佳植物獎
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[8].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[8].get('content') }} class="card-img-top" alt="Skyscrapers"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">
+                    榮獲台大2021年最佳植物獎
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-image hover-zoom">
+                  <a href={{ "data:image/png;base64," + img_list[9].get('content') }} class="fancybox" data-fancybox="gallery1">
+                    <img src={{ "data:image/png;base64," + img_list[9].get('content') }} class="card-img-top" alt="Skyscrapers"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">美麗的花</h5>
+                  <p class="card-text">
+                    榮獲台大2021年最佳植物獎
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        
+
+          &nbsp&nbsp&nbsp
+          
+          <div class = "container" style = "text-align: center">
+            <h4 style="font-family:微軟正黑體;">臺大山地實驗農場將於7/1(星期五)至8/31(星期三)舉辦「在地蔬食」活動。活動期間免預約，於門口付費即可入場參觀，每日入場時間為上午八點半至下午三點半。</h4>
+            <iframe width="980" height="600"
+              src="https://www.youtube.com/embed/FFmoN437lFM">
+            </iframe>
+          </div>
+
+
+          &nbsp&nbsp&nbsp
+          <div class = "container" style = "text-align: center">
+            <h2><span style="font-size:24px;"><strong><span style="color:#008000;">成立宗旨</span></strong></span></h2>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">梅峰本場海拔2100公尺，以溫帶園藝作物之教學研究和示範經營、環境教育及生態旅遊為重點。</span></span></p>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">設有一葉蘭展示室、溫帶果樹區、溫帶花卉區、蘭蕨園和有機蔬菜栽培生產區等，</span></span></p>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">為農場生態體驗營、環境教育、高冷地園藝教學研究與友善環境農業示範經營主要推廣基地。</span></span></p>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">本場為行政院環境保護署認證之「環境教育設施場所」，為提供民眾及學生優質的戶外學習環境，</span></span></p>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">農場整合在地資源、特色及理念，規劃出三大主軸的環境教育活動，</span></span></p>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">並針對特定對象提供專案課程：</span></span></p>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">(1)森林保育－藉由親近、感受臺灣中高海拔山林的生命力，透過活動設計，思考如何從生活中保護我們的居住環境，學習尊重和欣賞大自然。</span></span></p>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">(2)農業體驗－置身於農場現有耕作環境，可在活動中感受到農場結合友善自然、安全、健康的耕作理念，呈現生產與環境之間的和諧關係。</span></span></p>
+
+              <p><span style="font-family:微軟正黑體;"><span style="font-size:20px;">(3)在地文化－長久以來深耕賽德克族文化，透過文化保存、民俗植物復育，發掘更多如今已逐漸式微的土地倫理及社群關係，重新尋回生命的智慧與奧秘。期望藉由來場的學員的實地參與，為環境埋下一粒希望的種子，並且深耕傳播。</span></span></p>
+          </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>歡迎加入我們</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Bloom Berry
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">種植指導</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">農藝用品</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">農產品推銷</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">有機農作物</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i>546001南投縣仁愛鄉大同村仁和路215號</p>
+              <p><i class="fas fa-home me-3"></i>No.215,Renhe Rd.,Ren-ai Township,Nantou County 54641,Taiwan(R.O.C.)</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                bloomberry1023@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> (049)1231234</p>
+              <p><i class="fas fa-print me-3"></i> (049)1231234</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">xxx.com</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
   </body>
 
-  </html>
-
-</script>
+</html>
